@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "MKit",
+        "repositoryURL": "https://github.com/MartinPrusa/MKit",
+        "state": {
+          "branch": null,
+          "revision": "f5bb804a34f75803d41257d89d2830b9c09b439a",
+          "version": "1.0.4"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
