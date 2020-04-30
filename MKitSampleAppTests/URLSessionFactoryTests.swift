@@ -71,8 +71,7 @@ final class InvoiceWorker {
         let endpoint = InvoiceEndpoint.dummyLoad
         let requestConfig = endpoint.requestFactoryConfigurator()
         let request = URLRequestFactory.init(config: requestConfig).request
-        let resource = UrlResponseResource(request: request, result: nil)
-        URLSessionFactory.shared.isSSLPiningEnabled = true
+        let resource = UrlResponseResource(request: request, result: nil, isSslPinningEnabled: true)
         URLSessionFactory.shared.sslCertificate = SSLCertificate(fileName: "martinprusa", suffix: "der")
         return URLSessionFactory.shared.plainLoadPublisher(resource: resource)
     }

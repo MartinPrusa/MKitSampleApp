@@ -5,8 +5,8 @@
         "package": "MKit",
         "repositoryURL": "https://github.com/MartinPrusa/MKit",
         "state": {
-          "branch": "feature/ssl-pinning",
-          "revision": "2c6588140a76408284c51510bb0532f0f75192fe",
+          "branch": "master",
+          "revision": "e9fe90aac73b59d50e0c3ce4ce94b0721cb83e3a",
           "version": null
         }
       }

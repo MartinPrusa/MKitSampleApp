@@ -505,7 +505,7 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/MartinPrusa/MKit";
 			requirement = {
-				branch = "feature/ssl-pinning";
+				branch = master;
 				kind = branch;
 			};
 		};
