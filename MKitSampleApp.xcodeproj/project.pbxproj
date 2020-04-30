@@ -15,6 +15,9 @@
 		4680A25B2453803B00C3490C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4680A2592453803B00C3490C /* LaunchScreen.storyboard */; };
 		4680A2662453803B00C3490C /* MKitFortressTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4680A2652453803B00C3490C /* MKitFortressTests.swift */; };
 		4680A27224545F3100C3490C /* MKit in Frameworks */ = {isa = PBXBuildFile; productRef = 4680A27124545F3100C3490C /* MKit */; };
+		46E46A75245B2E0300B12054 /* SSLCertificateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E46A74245B2E0300B12054 /* SSLCertificateTests.swift */; };
+		46E46A7A245B414F00B12054 /* URLSessionFactoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E46A79245B414F00B12054 /* URLSessionFactoryTests.swift */; };
+		46E46A7D245B7C3100B12054 /* martinprusa.der in Resources */ = {isa = PBXBuildFile; fileRef = 46E46A7C245B7C3100B12054 /* martinprusa.der */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,9 @@
 		4680A2652453803B00C3490C /* MKitFortressTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MKitFortressTests.swift; sourceTree = "<group>"; };
 		4680A2672453803B00C3490C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4680A2732454630300C3490C /* MKitSampleApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MKitSampleApp.entitlements; sourceTree = "<group>"; };
+		46E46A74245B2E0300B12054 /* SSLCertificateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSLCertificateTests.swift; sourceTree = "<group>"; };
+		46E46A79245B414F00B12054 /* URLSessionFactoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionFactoryTests.swift; sourceTree = "<group>"; };
+		46E46A7C245B7C3100B12054 /* martinprusa.der */ = {isa = PBXFileReference; lastKnownFileType = file; path = martinprusa.der; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +88,7 @@
 		4680A24D2453803A00C3490C /* MKitSampleApp */ = {
 			isa = PBXGroup;
 			children = (
+				46E46A7C245B7C3100B12054 /* martinprusa.der */,
 				4680A2732454630300C3490C /* MKitSampleApp.entitlements */,
 				4680A24E2453803A00C3490C /* AppDelegate.swift */,
 				4680A2502453803A00C3490C /* SceneDelegate.swift */,
@@ -107,6 +114,8 @@
 			children = (
 				4680A2652453803B00C3490C /* MKitFortressTests.swift */,
 				4680A2672453803B00C3490C /* Info.plist */,
+				46E46A74245B2E0300B12054 /* SSLCertificateTests.swift */,
+				46E46A79245B414F00B12054 /* URLSessionFactoryTests.swift */,
 			);
 			path = MKitSampleAppTests;
 			sourceTree = "<group>";
@@ -200,6 +209,7 @@
 			files = (
 				4680A25B2453803B00C3490C /* LaunchScreen.storyboard in Resources */,
 				4680A2582453803B00C3490C /* Preview Assets.xcassets in Resources */,
+				46E46A7D245B7C3100B12054 /* martinprusa.der in Resources */,
 				4680A2552453803B00C3490C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -228,6 +238,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46E46A7A245B414F00B12054 /* URLSessionFactoryTests.swift in Sources */,
+				46E46A75245B2E0300B12054 /* SSLCertificateTests.swift in Sources */,
 				4680A2662453803B00C3490C /* MKitFortressTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -493,8 +505,8 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/MartinPrusa/MKit";
 			requirement = {
-				kind = exactVersion;
-				version = 1.0.4;
+				branch = "feature/ssl-pinning";
+				kind = branch;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
